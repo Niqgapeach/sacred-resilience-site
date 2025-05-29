@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sacred Resilience Apothecary</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to bottom right, #2e0f3e, #311a63);
+      color: #f9f6f3;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?fit=crop&w=1500&q=80') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 4rem 1rem;
+      position: relative;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.5);
+      z-index: 0;
+    }
+    header h1, header p {
+      position: relative;
+      z-index: 1;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin: 0;
+    }
+    nav {
+      background-color: #4b2c5b;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .section {
+      margin-bottom: 3rem;
+    }
+    .section h2 {
+      color: #ffd700;
+      margin-bottom: 1rem;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .product {
+      background: #3c2855;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+    .product h3 {
+      margin-top: 0;
+      color: #f3d9ff;
+    }
+    .cta button, .product a button {
+      background-color: #ffd700;
+      color: #2e0f3e;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+    .cta button:hover, .product a button:hover {
+      background-color: #ffbf00;
+    }
+    form input, form button {
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      width: 100%;
+      max-width: 400px;
+      display: block;
+      border-radius: 8px;
+      border: none;
+      font-size: 1rem;
+    }
+    form button {
+      background-color: #ffd700;
+      color: #2e0f3e;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #1d1027;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sacred Resilience Apothecary</h1>
+    <p>Herbal alchemy for the bold, the sacred, and the sovereign.</p>
+  </header>
+
+  <nav>
+    <a href="#shop">Shop</a>
+    <a href="#about">About</a>
+    <a href="#newsletter">Newsletter</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="shop" class="section">
+      <h2>Shop Elixirs</h2>
+      <div class="product-grid">
+        <div class="product">
+          <h3>Divine Flow</h3>
+          <p>Supports adrenal and hormone balance.</p>
+          <a href="#"><button>Buy Now</button></a>
+        </div>
+        <div class="product">
+          <h3>Body Rebirth Elixir</h3>
+          <p>Weight support, natural energy, and cleansing.</p>
+          <a href="#"><button>Buy Now</button></a>
+        </div>
+        <div class="product">
+          <h3>Focus Pocus</h3>
+          <p>Clarity for neurodivergent brilliance.</p>
+          <a href="#"><button>Buy Now</button></a>
+        </div>
+        <div class="product">
+          <h3>Quiet Flame</h3>
+          <p>Herpes support and emotional peace.</p>
+          <a href="#"><button>Buy Now</button></a>
+        </div>
+        <div class="product">
+          <h3>Migraine Rescue</h3>
+          <p>Fast relief meets spiritual clarity.</p>
+          <a href="#"><button>Buy Now</button></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About the Healer</h2>
+      <p>Sacred Resilience Apothecary was born from the fires of lived experience. Our formulas blend herbal medicine, spiritual wisdom, and ancestral remembrance.</p>
+    </section>
+
+    <section id="newsletter" class="section">
+      <h2>Join the Sacred Circle</h2>
+      <p>Sign up to receive preorder access, sacred rituals, and apothecary launches.</p>
+      <form action="https://example.us1.list-manage.com/subscribe/post" method="POST">
+        <input type="email" name="EMAIL" placeholder="Your email address" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Got questions or custom requests? Reach out at <strong>sacredresilienceapothecary@gmail.com</strong></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sacred Resilience Apothecary. All rights reserved.</p>
+  </footer>
+</body>
+</html>
